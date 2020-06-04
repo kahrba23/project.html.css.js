@@ -1,0 +1,214 @@
+*{
+	
+	margin: 0px;
+	padding:0px;
+	box-sizing:borde-box;
+	
+	
+}
+body 
+{
+	
+	text-align: center;
+	
+		background-image: url(back2.jpg);
+		background-repeat: no-repeat;
+		background-attachment : fixed;
+		background-size: 100% 100%;
+	  
+	
+	 
+	
+	
+	
+}
+nav
+{
+	display: flex;
+	justify-content:space-around;
+	align-items:center;
+	min-height: 8vh;
+	background-color: cornsilk; 
+	font-family: 'Poppins', sans-serif;
+	z-index: 100;
+}
+.logo
+{
+	font-family: 'Architects Daughter', cursive;
+
+	color: lightcoral;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 22px;
+}
+.nav-links
+{
+	display: flex;
+	justify-content:space-around;
+	width: 30%;
+	z-index: 100;
+
+}
+.nav-links li
+{
+	list-style: none;
+
+}
+.nav-links a
+{
+	color: lightcoral;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+
+}
+.stone{
+	display: none;
+	cursor: pointer;
+}
+
+.stone div
+{
+	width: 25px;
+	height: 3px;
+	background-color: lightcoral;
+	margin: 5px;
+	transition: all 0.3s ease;
+	
+
+
+}
+@media screen and (min-width:320px) and (max-width :1900px)
+{
+	.nav-links{
+		width: 60%;
+	}
+	
+}
+@media screen and (max-width:768px)
+{
+	body
+	{
+	overflow-x: hidden; 	
+	}
+	.nav-links
+	{
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: cornsilk;
+		display: flex;
+		flex-direction :column;
+		align-items:center;
+		width: 50%;
+		transform :translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li
+	{
+	opacity: 0;	
+	}
+	.stone
+	{
+		display: block;
+	}
+	.nav-active
+	{
+	transform :translateX(0%);	
+	}
+	@keyframes navLinkFade
+	{
+		from{
+		opacity :0;
+		transform: translateX(50px);
+		}
+		to
+		{
+			opacity: 1;
+			transform: translateX(0px);
+		}
+		
+	}
+	
+}
+.toggle .line1
+{
+transform: rotate(-45deg) translate(-5px,6px);	
+}
+.toggle .line2
+{
+opacity: 0;	
+}
+.toggle .line3
+{
+transform: rotate(45deg) translate(-5px,-6px);	
+}
+
+
+
+.b-a h2{
+    padding-top: 0%;
+    font-size: 70px;
+   
+    text-transform: uppercase;
+	color :rgb(146, 128, 54);
+ font-family: 'Architects Daughter', cursive, sans-serif;
+
+
+}
+.c-a
+{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background-color: rgb(133, 119, 64);
+    height:1100px;
+
+}
+.c-a h2{
+	font-family: 'Architects Daughter', cursive, sans-serif;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+
+
+}
+.c-a p{
+    padding:3%;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+
+	
+	
+
+
+}
+.skills
+{
+	display: flex;
+	margin-left: 10%;
+	margin-right: 10%;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 20px;
+}
+.c-a  .log{
+    
+	font-family: 'Architects Daughter', cursive;
+	
+	
+	
+
+
+}
+
+
+
